@@ -1,0 +1,52 @@
+SEN 201 SDLC DOCUMENT
+Student Information
+Name: Hassan Raimot Omosewami
+Matric Number: 24/14469
+Department: Computer Science
+
+Project Title
+Campus Book Lending System (CBLS)
+CBLS is a command-line Python application that allows students to borrow and return books while tracking availability.
+
+Software Development Life Cycle (SDLC)
+1. Requirements Analysis
+Functional Requirements:
+Add new books to the system
+View all books
+Borrow books
+Return books
+Non-Functional Requirements:
+Command-line interface
+Written in Python 3.x
+Data stored in memory (dictionary)
+2. System Design
+Architecture:
+Single-file procedural Python program
+Data Design:
+books = {
+"book_id": {
+"title": str,
+"author": str,
+"available": bool
+}
+}
+3. Implementation
+File: cbls.py
+Implements functions: add_book, view_books, borrow_book, return_book
+CLI main menu to interact with system
+4. Testing
+Add multiple books
+Borrow available book
+Borrow unavailable book
+Return borrowed book
+Attempt invalid return
+5. Deployment
+Repository: sen201-cbls-project on GitHub
+Run program via:
+python cbls.py
+6. Maintenance
+Future improvements:
+Persistent storage (file/database)
+User authentication
+Graphical interface
+
